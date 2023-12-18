@@ -15,6 +15,9 @@ Welcome to the Yoga Class Admission Form project! This is a simple web applicati
 - `backend/`: The Node.js back-end code is stored here.
 - `er_diagram.png`: Check out this image for an overview of the database structure.
 
+## Project Hosted URL
+https://dreamy-rugelach-5a440e.netlify.app/
+
 ## How to Get Started
 
 1. **Clone the repository:**
