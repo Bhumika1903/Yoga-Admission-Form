@@ -1,65 +1,66 @@
-# YogaClassroom
+# Yoga Class Admission Form
 
-A Django React Application 
+Welcome to the Yoga Class Admission Form project! This is a simple web application where people can sign up for monthly yoga classes. The project consists of a user-friendly form (front-end) built with React and a server (back-end) developed with Node.js.
 
-# This application is made in such a way that you dont need to compile react files in `frontend`, because django directly looking for the main `templates/frontend/index.html` HTML file, and all the neccesary compiled javascript is pointing to this file.
-So just directly run `python manage.py runserver` after installing neccesary modules.
+## Features
 
-## All the neccesary validations is happening in the backend of the application i.e `./YogaForm`.
+- **User Enrollment:** Individuals can enroll by providing their name, age, and selecting a preferred class time.
+- **Basic Validation:** The form ensures participants are aged between 18 and 65.
+- **Flexible Batches:** Users can choose different class times each month.
+- **Payment Simulation:** The system simulates the payment process for the monthly fees.
+
+## Project Structure
+
+- `frontend/`: This folder holds the React front-end code.
+- `backend/`: The Node.js back-end code is stored here.
+- `er_diagram.png`: Check out this image for an overview of the database structure.
+
+## How to Get Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/yoga-class-admission-form.git
+   cd yoga-class-admission-form
+
+2. **Install dependencies:**
+   ```bash
+   # Go to the frontend folder
+   cd frontend
+   npm install
+
+   # Move to the backend folder
+   cd ../backend
+   npm install
 
 ## Entity-Relationship Diagram For YogaClasses
 ![E-R UCL](https://user-images.githubusercontent.com/41137189/142236305-6f978ae1-c0ca-49d4-8568-bcf8b1570de6.jpg)
 
-## DATABASE
 
-![DB-1](https://user-images.githubusercontent.com/41137189/142240056-b8439d2e-7e35-4c7b-99eb-8fce169e7ae3.png)
-![DB-2](https://user-images.githubusercontent.com/41137189/142240059-7e8eabf1-470c-4880-9256-e8478832bb17.png)
-![DB-3](https://user-images.githubusercontent.com/41137189/142240049-faf96510-4340-4552-abc1-baaa4867319b.png)
+## Usage
 
+1. **Start the backend server:**
+   ```bash
+   # In the backend directory
+   npm start
 
-# Try It
+2. **Start the Frontend Development Server:**
+   ```bash
+   # In the frontend directory
+   npm start
 
-https://flexmoney-yoga-form.herokuapp.com/
+## Backend Configuration
+- Modify backend settings in the `backend/config.js` file.
+- Update database connection details, payment API information, or any other configuration as needed.
 
-## Setup Instructions
+## Deployment
+- Deploy the frontend on platforms like Netlify, Vercel, or GitHub Pages.
+- For the backend, platforms like Heroku or others are suitable.
 
-### Clone this repo
+## Optional Features
+Feel free to explore additional features like containerizing the application, implementing performance improvements, or designing a highly scalable architecture. Check the documentation for more details.
 
-`https://github.com/avigupta10/YogaClassroom.git`
+## Contributing
+Contributions are welcome! Please follow the contribution guidelines.
 
-### Create Virtual Environment and Install Required Python Modules
-`cd YogaClassroom`
-
-Install venv
-`pip install virtualenv`
-
-For Creating a venv run this 
-`virtualenv -p python3 venv`
-
-Activate virtualenv 
-`venv\Scripts\activate`
-
-Install requirements
-```bash
-pip install -r requirements.txt
-```
-### Start Web Server
-
-To start the web server you need to run the following sequence of commands.
-
-Run the django web server.
-```bash
-python manage.py runserver
-```
-
-## [Install Node.js](https://nodejs.org/en/)
-
-## Install Node Modules
-
-First cd into the ```frontend``` folder.
-```bash
-cd frontend
-```
-Next install all dependicies.
-```bash
-npm i
+## License
+This project is licensed under the MIT License.
